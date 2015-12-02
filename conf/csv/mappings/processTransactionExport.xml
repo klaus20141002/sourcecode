@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excelMappings namespace="">
+<excelMapping templateName="exportDealerTransaction">
+	<sheetMapping name="sheet1" startRowIndex="1" className="com.cap.bts.qrcode.businesslogic.dealer.report.dto.ReportForAMResultDataDto">
+		<columnMapping header="二维码" columnIndex="0" field="qrcode" type="string" msgkey=""/>
+		<columnMapping header="零售商编号" columnIndex="1" field="dealer_no" type="string" msgkey=""/>
+		<columnMapping header="零售商名称" columnIndex="2" field="dealer_name" type="string" msgkey=""/>
+		<columnMapping header="交易类型" columnIndex="3" field="transaction_type" type="string" msgkey=""/>
+		<columnMapping header="交易日期" columnIndex="4" field="transaction_date" type="string" msgkey=""/>
+		<columnMapping header="交易单号" columnIndex="5" field="transaction_no" type="string" msgkey=""/>
+		<columnMapping header="规格" columnIndex="6" field="item_code" type="string" msgkey=""/>
+		<columnMapping header="规格描述" columnIndex="7" field="item_description" type="string" msgkey=""/>
+		<columnMapping header="消费者姓名" columnIndex="8" field="consumer_name" type="string" msgkey=""/>
+		<columnMapping header="扫描结果" columnIndex="9" field="para_value" type="string" msgkey=""/>
+		<columnMapping header="提示信息" columnIndex="10" field="para_desc" type="string" msgkey=""/>
+	</sheetMapping>
+</excelMapping>
+</excelMappings>
