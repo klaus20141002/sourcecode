@@ -1,4 +1,4 @@
-package com.mikaelson.common.domain;
+package com.mikaelson.common.base.domain;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;

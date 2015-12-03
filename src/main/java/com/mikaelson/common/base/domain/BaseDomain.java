@@ -1,9 +1,10 @@
-package com.mikaelson.common.domain;
+package com.mikaelson.common.base.domain;
 
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+
 @MappedSuperclass
 public abstract class BaseDomain implements java.io.Serializable {
 

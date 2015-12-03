@@ -16,7 +16,7 @@
  * Date                             Who                 Version             Comments
  * 2011-1-26 上午10:15:14         Brenda Yin            1.0             Initial Version
  ************************************************************************************/
-package com.mikaelson.common.dao;
+package com.mikaelson.common.base.dao;
 
 import java.util.List;
 import java.util.Map;
