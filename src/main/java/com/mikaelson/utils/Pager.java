@@ -1,6 +1,6 @@
 package com.mikaelson.utils;
 
-import com.mikaelson.common.dto.BaseDto;
+import com.mikaelson.common.base.dto.BaseDto;
 
 /**
  * Class including Paging information.
