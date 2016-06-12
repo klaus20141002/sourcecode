@@ -20,18 +20,7 @@ package com.mikaelson.common.file.domain;
 
 import java.util.Date;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
-import javax.persistence.Table;
-
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import com.mikaelson.common.base.domain.BaseDomain;
 
@@ -42,14 +31,14 @@ import com.mikaelson.common.base.domain.BaseDomain;
 /**
  *
  */
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-@Entity
-@Table(name = "tl_common_file_log")
-@AttributeOverrides({
-		@AttributeOverride(name = "createDate", column = @Column(name = "CREATE_DATE", nullable = false, columnDefinition = "DATE DEFAULT SYSDATE")),
-		@AttributeOverride(name = "lastUpdateDate", column = @Column(name = "LAST_UPDATE_DATE", nullable = false, columnDefinition = "DATE DEFAULT SYSDATE")),
-		@AttributeOverride(name = "lastUpdateBy", column = @Column(name = "LAST_UPDATE_BY", nullable = false, columnDefinition = "number(18) default 0")),
-		@AttributeOverride(name = "createBy", column = @Column(name = "CREATE_BY", nullable = false, columnDefinition = "number(18) default 0")) })
+//@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//@Entity
+//@Table(name = "tl_common_file_log")
+//@AttributeOverrides({
+//		@AttributeOverride(name = "createDate", column = @Column(name = "CREATE_DATE", nullable = false, columnDefinition = "DATE DEFAULT SYSDATE")),
+//		@AttributeOverride(name = "lastUpdateDate", column = @Column(name = "LAST_UPDATE_DATE", nullable = false, columnDefinition = "DATE DEFAULT SYSDATE")),
+//		@AttributeOverride(name = "lastUpdateBy", column = @Column(name = "LAST_UPDATE_BY", nullable = false, columnDefinition = "number(18) default 0")),
+//		@AttributeOverride(name = "createBy", column = @Column(name = "CREATE_BY", nullable = false, columnDefinition = "number(18) default 0")) })
 public class FileTransfer extends BaseDomain {
 
 	private static final long serialVersionUID = 1L;
@@ -64,9 +53,9 @@ public class FileTransfer extends BaseDomain {
 	 * @Date        :      2015年12月3日
 	 * @return
 	 */
-	@Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_common_file_log")
-    @SequenceGenerator(name = "seq_common_file_log", sequenceName = "seq_common_file_log", allocationSize = 1)
+//	@Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_common_file_log")
+//    @SequenceGenerator(name = "seq_common_file_log", sequenceName = "seq_common_file_log", allocationSize = 1)
     public Long getId() {
         return id;
     }
